@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+.pytest_cache/
+.coverage
+
+# Never commit vault data, keys, or local runtime state
+*.db
+*.db-wal
+*.db-shm
+*.sqlite*
+*.jsonl
+*.log
+*.pem
+*.key
+recovery*.txt
+recovery-envelope.json
+config.json
+enrollment.json
+api-clients.json
+.env
+
+# Editors / OS
+.DS_Store
+.idea/
+.vscode/
+node_modules/

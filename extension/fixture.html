@@ -1,0 +1,12 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>ArcturionGate synthetic fixture</title>
+<link rel="stylesheet" href="style.css"></head><body><main><h1>ArcturionGate synthetic fixture</h1>
+<p>Synthetic credentials only. This page never sends data to the network.</p>
+<form><label>Account<input autocomplete="username" value="gate-synthetic@example.invalid"></label>
+<label>Password<input type="password" data-gate-kind="password"></label>
+<label>Authenticator code<input autocomplete="one-time-code" data-gate-kind="totp"></label>
+<label>API token<input data-gate-kind="token"></label>
+<label>Authenticator setup key<input data-gate-kind="seed"></label>
+<label>Recovery material<textarea data-gate-kind="recovery"></textarea></label>
+<label>Encrypted note<textarea data-gate-kind="note"></textarea></label></form><button type="button" id="verify-login">Verify synthetic login</button>
+<p id="status">Initializing…</p></main><script type="module" src="fixture.js"></script></body></html>

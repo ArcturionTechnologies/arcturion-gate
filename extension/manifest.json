@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "ArcturionGate Bridge",
+  "version": "0.1.0",
+  "description": "Fills and captures credential fields for a local ArcturionGate vault without exposing values to AI agents.",
+  "permissions": [
+    "nativeMessaging",
+    "storage",
+    "tabs",
+    "scripting",
+    "webNavigation"
+  ],
+  "host_permissions": [
+    "https://*/*"
+  ],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "action": {
+    "default_title": "ArcturionGate"
+  }
+}
